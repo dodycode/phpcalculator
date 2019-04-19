@@ -1,0 +1,121 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+.card{
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 0 1px 5px #dcdcdc;
+	width: 40%;
+}
+
+.card .heading{
+	font-weight: bold;
+	font-size: 22px;
+	letter-spacing: 1px;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.card .operator{
+	appearance: none;
+	-webkit-appearance: none;
+	background-color: #81c784;
+	border: 0;
+	border-radius: 3px;
+	color: #fff;
+	padding: 5px 15px;
+	font-size: 18px;
+	cursor: pointer;
+	margin-top: 15px;
+	transition: all 0.3s;
+}
+
+.card .operator:focus,
+.card .operator:hover{
+	outline: none;
+	background-color: #388e3c;
+}
+
+.card .math{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.card .math .input{
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	width: 30%;
+	text-align: center;
+	border-bottom: 1px solid #696969;
+	padding-bottom: 10px;
+}
+
+.card .math .input:focus,
+.card .math .input:hover{
+	outline: none;
+}
+
+.card .math #showOperator{
+	font-size: 40px;
+	font-weight: 300;
+}
+
+.card .submit{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card .submit .btn-submit{
+	appearance: none;
+	-webkit-appearance: none;
+	background-color: #81c784;
+	color: #fff;
+	border: 0;
+	border-radius: 3px;
+	padding: 10px 0;
+	width: 30%;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.card .submit .btn-submit:hover,
+.card .submit .btn-submit:focus{
+	background-color: #388e3c;
+}
+
+@media screen and (max-width: 1080px) {
+	.container{
+		padding: 0 16px;
+	}
+
+	.card{
+		width: 100%;
+	}
+
+	.card .submit .btn-submit{
+		width: 50%;
+	}
+}
