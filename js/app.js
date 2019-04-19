@@ -10,6 +10,7 @@ window.addEventListener("DOMContentLoaded",function() {
     e.preventDefault(); 
     
     var formData = new FormData(this);
+    document.getElementById('submitBtn').value = 'Loading...';
 
     axios({
 	    method: 'post',
@@ -21,6 +22,7 @@ window.addEventListener("DOMContentLoaded",function() {
     })
     .then(function (data) {
     	swal("Result", "Result: "+data.hasil);
+    	document.getElementById('submitBtn').value = 'Hitung';
     })
     .catch(function (response) {
         console.error(response);

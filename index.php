@@ -27,7 +27,7 @@
 					<input type="number" min="0" name="bil2" class="input" placeholder="Insert Number..." required />
 				</div>
 				<div class="submit">
-					<input type="submit" class="btn-submit" value="Hitung" />
+					<input id="submitBtn" type="submit" class="btn-submit" value="Hitung" />
 				</div>
 			</form>
 		</div>
